@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Flower-banner</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		@font-face {
+			font-family: 'MontserratAlternates-Bold';
+			src: url('fonts/MontserratAlternates-Bold.woff') format('woff'),
+				url('fonts/MontserratAlternates-Bold.woff2') format('woff2'),
+				url('fonts/MontserratAlternates-Bold.svg#MontserratAlternates-Bold') format('svg'),
+				url('fonts/MontserratAlternates-Bold.eot'),
+				url('fonts/MontserratAlternates-Bold.eot?#iefix') format('embedded-opentype'),
+				url('fonts/MontserratAlternates-Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Montserrat-SemiBold';
+			src: url('Montserrat-SemiBold.woff') format('woff'),
+				url('fonts/Montserrat-SemiBold.woff2') format('woff2'),
+				url('fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg'),
+				url('fonts/Montserrat-SemiBold.eot'),
+				url('fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+				url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+
+		@font-face {
+			font-family: 'Montserrat-ExtraBold';
+			src: url('Montserrat-ExtraBold.woff') format('woff'),
+				url('fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+				url('fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg'),
+				url('fonts/Montserrat-ExtraBold.eot'),
+				url('fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+				url('fonts/Montserrat-ExtraBold.ttf') format('truetype');
+
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Playfair Display';
+			src: url('fonts/PlayfairDisplay-Bold.eot');
+			src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+				url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+				url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+				url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+				url('fonts/PlayfairDisplay-Bold.svg#Playfair Display') format('svg');
+		}
+
+
+
+		.main {
+			width: auto;
+			height: auto;
+			background-color: #cdc7b6;
+		}
+
+		.index {
+			width: 1440px;
+			height: auto;
+			margin: auto;
+		}
+
+		.top-bar {
+			width: 100%;
+			height: 99px;
+			background-color: #c87e6b;
+		}
+
+		.left-bar {
+			width: 380px;
+			height: 99px;
+			background-color: ;
+			float: left;
+			margin: 0 0 0 49px;
+		}
+
+		.left-bar img {
+			padding: 30px 0 0 56px;
+		}
+
+		.center-bar {
+			width: 650px;
+			height: 99px;
+			background-color: ;
+			float: left;
+		}
+
+		.center-bar ul {
+			color: #fff;
+			padding: 45px 0 0 0;
+		}
+
+		.center-bar ul li {
+			list-style-type: none;
+			display: inline;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 0 75px 0 0;
+		}
+
+		.center-bar ul li a {
+			color: #fff;
+		}
+
+		.center-bar ul li a:link,
+		center-bar ul li a:visited {
+			list-style-type: none;
+			display: inline;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 15px;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+
+		.center-bar ul li a:hover {
+			list-style-type: none;
+			display: inline;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 15px;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+
+		.center-bar ul span {
+			border: 1px solid #fff;
+			border-radius: 10px;
+		}
+
+		.center-bar ul span li {
+			padding: 0 8px 0 8px;
+		}
+
+
+		.right-bar {
+			width: 250px;
+			height: 99px;
+			background: url(images/add.png) no-repeat center left 35%, url(images/store.png) no-repeat center left 65%, url(images/menu.png) no-repeat center left 98%;
+			float: left;
+			background-color: ;
+			margin: 0 0 0 80px
+		}
+
+		.arrangement {
+			width: 100%;
+			height: 802px;
+			background-color: ;
+		}
+
+		.left-part {
+			width: 720px;
+			height: 802px;
+			background: url(images/texture1.png) no-repeat center;
+			float: left;
+		}
+
+		.left-part img {
+			padding: 94px 0 0 571px;
+		}
+
+		.left-part span img {
+			padding: 50px 0 0 0;
+			margin: 0 0 0 -495px;
+
+		}
+
+		.left-part span h1 {
+			font-size: 60px;
+			font-family: 'Playfair Display';
+			padding: 20px 0 0 0;
+			text-align: center;
+			font-weight: bold;
+			color: #484a4b;
+		}
+
+		.left-part h1 {
+			font-size: 60px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			font-weight: bold;
+			color: #484a4b;
+		}
+
+		.left-part h2 {
+			font-size: 30px;
+			font-family: 'Montserrat-SemiBold';
+			text-align: center;
+			color: #765a33;
+			padding: 25px 0 0 0;
+		}
+
+		.left-part p {
+			font-size: 25px;
+			font-family: ;
+			text-align: left;
+			color: #765a33;
+			padding: 15px 0 58px 180px;
+		}
+
+		.left-part ul li {
+			list-style-type: none;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 20px;
+			color: fff;
+			margin: 0 0 0 300px;
+			display: inline;
+			float: left;
+		}
+
+		.left-part ul li a:link,
+		left-part ul li a:visited {
+			list-style-type: none;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 20px;
+			color: fff;
+			text-decoration: none;
+			display: inline;
+		}
+
+		.left-part ul li a:hover {
+			list-style-type: none;
+			font-family: 'Montserrat-ExtraBold';
+			font-size: 20px;
+			color: fff;
+			text-decoration: none;
+			background-color: #5d5858;
+		}
+
+		.left-part ul li a {
+			width: 70px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+		}
+
+		.left-part span a {
+			color: #484a4b;
+			float: left;
+			padding: 0 0 0 25px;
+			font-size: 20px;
+		}
+
+		.left-part span a:link,
+		left-part span a:visited {
+			color: #484a4b;
+			float: left;
+			padding: 0 0 0 25px;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.left-part span a:hover {
+			color: blue;
+			float: left;
+			padding: 0 0 0 25px;
+			text-decoration: underline;
+			font-size: 20px;
+		}
+
+		.right-part {
+			width: 720px;
+			height: 802px;
+			background-color: #fff000;
+			float: left;
+		}
+
+		.promotion {
+			width: 100%;
+			height: 265px;
+			background-color: #6a502c;
+		}
+
+		.promotion h1 {
+			font-size: 50px;
+			color: #fff;
+			padding: 90px 0 0 0;
+			text-align: center;
+			font-family: 'Playfair Display';
+		}
+
+		.promotion h2 {
+			font-size: 20px;
+			font-family: 'Montserrat-SemiBold';
+			color: #fff;
+			text-align: center;
+		}
+
+		.first {
+			float: left;
+			padding: 0 0 0 160px;
+		}
+
+		.second {
+			float: left;
+			padding: 0 0 0 180px;
+		}
+
+		.third {
+			float: left;
+			padding: 0 0 0 180px;
+		}
+
+		.fourth {
+			float: left;
+			padding: 0 0 0 180px;
+		}
+
+		.main2 {
+			width: 100%;
+			height: 6180px;
+			background: url(images/texture1.png) no-repeat center;
+		}
+
+		.top-product {
+			width: 100%;
+			height: 961px;
+			background: url(images/product-leaf.png) no-repeat top 15% left 10%, url(images/product-leaf2.png) no-repeat top 15% left 91%;
+			background-color: ;
+		}
+
+		.top-product h1 {
+			font-size: 50px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			color: #484a4b;
+			padding: 130px 0 0 0;
+		}
+
+		.top-product h2 {
+			font-size: 25px;
+			font-family: 'Montserrat-SemiBold';
+			text-align: center;
+			color: #765a33;
+			padding: 5px 0 0 0;
+		}
+
+		.pots {
+			width: 1270px;
+			height: 473px;
+			background-color: ;
+			margin: 100px auto 64px auto;
+		}
+
+		.pot1 {
+			width: 294px;
+			height: 473px;
+			background-color: #fff;
+			margin: 0 30px 0 0;
+			float: left;
+		}
+
+		.pot1 span img {
+			padding: 16px 0 0 90%;
+		}
+
+		.pot1 h1 {
+			font-size: 30px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			padding: 0 0 0 0;
+			color: #484a4b;
+		}
+
+		.pot1 p {
+			font-size: 15px;
+			text-align: left;
+			padding: 0 0 15px 49px;
+			color: #765a33;
+		}
+
+		.pot1 a {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 48px;
+		}
+
+		.pot1 a:link,
+		pot1 a:visited {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot1 a:hover {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot2 {
+			width: 294px;
+			height: 473px;
+			background-color: #fff;
+			margin: 0 30px 0 0;
+			float: left;
+		}
+
+		.pot2 span img {
+			padding: 16px 0 0 90%;
+		}
+
+		.pot2 h1 {
+			font-size: 30px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			padding: 0 0 0 0;
+			color: #484a4b;
+		}
+
+		.pot2 p {
+			font-size: 15px;
+			text-align: left;
+			padding: 0 0 15px 49px;
+			color: #765a33;
+		}
+
+		.pot2 a {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 48px;
+		}
+
+		.pot2 a:link,
+		pot1 a:visited {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot2 a:hover {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot3 {
+			width: 294px;
+			height: 473px;
+			background-color: #fff;
+			margin: 0 30px 0 0;
+			float: left;
+		}
+
+		.pot3 span img {
+			padding: 16px 0 0 90%;
+		}
+
+		.pot3 h1 {
+			font-size: 30px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			padding: 0 0 0 0;
+			color: #484a4b;
+		}
+
+		.pot3 p {
+			font-size: 15px;
+			text-align: left;
+			padding: 0 0 15px 49px;
+			color: #765a33;
+		}
+
+		.pot3 a {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 48px;
+		}
+
+		.pot3 a:link,
+		pot1 a:visited {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot3 a:hover {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot4 {
+			width: 294px;
+			height: 473px;
+			background-color: #fff;
+			margin: 0 0 0 0;
+			float: left;
+		}
+
+		.pot4 span img {
+			padding: 16px 0 0 90%;
+		}
+
+		.pot4 h1 {
+			font-size: 30px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			padding: 0 0 0 0;
+			color: #484a4b;
+		}
+
+		.pot4 p {
+			font-size: 15px;
+			text-align: left;
+			padding: 0 0 15px 49px;
+			color: #765a33;
+		}
+
+		.pot4 a {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 48px;
+		}
+
+		.pot4 a:link,
+		pot1 a:visited {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.pot4 a:hover {
+			width: 50px;
+			height: 31px;
+			border-radius: 10px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			text-decoration: none;
+		}
+
+		.buttons {
+			width: 100%;
+			height: 80px;
+			background: url(images/product-leaf3.png) no-repeat top 20% left 10%, url(images/product-leaf4.png) no-repeat top 20% left 91%;
+		}
+
+		.button img {
+			padding: 0 0 0 40px;
+		}
+
+		.how-we {
+			width: 100%;
+			height: 966px;
+			background: url(images/how-we-leaf.png) no-repeat top 10% left, url(images/how-we-leaf2.png) no-repeat top 90% right;
+			padding: 0 0 50px 0;
+		}
+
+		.how-we h1 {
+			font-size: 50px;
+			font-family: 'Playfair Display';
+			text-align: center;
+			color: #484a4b;
+		}
+
+		.how-we h2 {
+			font-size: 25px;
+			font-family: 'Montserrat-SemiBold';
+			text-align: center;
+			color: #765a33;
+			padding: 5px 0 0 0;
+		}
+
+		.how-we img {
+			padding: 70px 0 0 163px;
+		}
+
+		.special-offer {
+			width: 100%;
+			height: 392px;
+			background-color: #dcc47b;
+		}
+
+		.special1 {
+			width: 720px;
+			height: 421px;
+			background-color: ;
+			float: left;
+		}
+
+		.special1 h2 {
+			width: 225px;
+			font-family: 'Playfair Display';
+			height: 35px;
+			font-size: 25px;
+			text-align: center;
+			border: 1px solid #424242;
+			border-radius: 20px;
+			background-color: #424242;
+			color: #fff;
+			margin: 60px auto 0 auto;
+			text-transform: uppercase;
+		}
+
+		.special1 img {
+			float: left;
+			padding: 15px 0 0 80px;
+		}
+
+		.special1 span img {
+			float: left;
+			padding: 15px 0 0 40px;
+		}
+
+		.special1 h1 {
+			float: left;
+			font-size: 150px;
+			color: #424242;
+			padding: 15px 0 0 60px;
+		}
+
+		.special1 p {
+			float: left;
+			font-family: 'Montserrat-SemiBold';
+			font-size: 25px;
+			color: #424242;
+			padding: 0 0 0 255px;
+			text-align: center;
+		}
+
+		.special2 {
+			width: 615px;
+			height: 421px;
+			background-color: ;
+			float: left;
+		}
+
+		.best-flower {
+			width: 100%;
+			height: 950px;
+			background: url(images/best-leaf2.png) no-repeat right bottom;
+		}
+
+		.best-flower img {
+			padding: 122px 0 0 55px;
+			float: left;
+		}
+
+		.right-side {
+			width: 400px;
+			height: 800px;
+			float: left;
+			background-color: ;
+		}
+
+		.right-side img {
+			padding: 237px 0 0 80px;
+		}
+
+		.right-side h2 {
+			font-size: 40px;
+			font-family: 'Playfair Display';
+			padding: 370px 0 0 80px;
+			color: #484a4b;
+		}
+
+		.right-side p {
+			font-size: 20px;
+			padding: 10px 0 35px 80px;
+			color: #765a33;
+		}
+
+		.right-side a {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 80px;
+		}
+
+		.right-side a:link,
+		pot1 a:visited {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.right-side a:hover {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.take-care {
+			width: 100%;
+			height: 950px;
+			background: url(images/take-leaf.png) no-repeat left bottom;
+		}
+
+		.take-left-side {
+			width: 400px;
+			height: 800px;
+			float: left;
+			background-color: ;
+			margin: 0 0 0 120px;
+		}
+
+		.take-left-side img {
+			padding: 197px 0 0 133px;
+		}
+
+		.take-left-side h2 {
+			font-size: 40px;
+			font-family: 'Playfair Display';
+			padding: 57px 0 0 133px;
+			color: #484a4b;
+		}
+
+		.take-left-side p {
+			font-size: 20px;
+			padding: 10px 0 35px 133px;
+			color: #765a33;
+		}
+
+		.take-left-side a {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 0 133px;
+		}
+
+		.take-left-side a:link,
+		pot1 a:visited {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.take-left-side a:hover {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.take-care span img {
+			padding: 104px 0 0 80px;
+		}
+
+		.love {
+			width: 100%;
+			height: 950px;
+			background: url(images/best-leaf2.png) no-repeat right bottom;
+		}
+
+		.love img {
+			padding: 122px 0 0 55px;
+			float: left;
+		}
+
+		.love-right-side {
+			width: 400px;
+			height: 800px;
+			float: left;
+			background-color: ;
+			margin: 0 0 0 20px;
+		}
+
+		.love-right-side img {
+			padding: 237px 0 0 80px;
+		}
+
+		.love-right-side h2 {
+			font-size: 40px;
+			padding: 370px 0 0 80px;
+			font-family: 'Playfair Display';
+			color: #484a4b;
+		}
+
+		.love-right-side p {
+			font-size: 20px;
+			padding: 10px 0 35px 80px;
+			color: #765a33;
+		}
+
+		.love-right-side span a {
+			padding: 30px 0 0 0;
+		}
+
+		.love-right-side a {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 0 10px 0 10px;
+			margin: 0 0 0 80px;
+		}
+
+		.love-right-side a:link,
+		pot1 a:visited {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #787878;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.love-right-side a:hover {
+			width: 80px;
+			height: 31px;
+			border-radius: 20px;
+			background-color: #454545;
+			color: #fff;
+			padding: 5px 20px 5px 20px;
+			text-decoration: none;
+		}
+
+		.subscribe {
+			width: 100%;
+			height: 680px;
+			background-color: ;
+		}
+
+		.subscribe h1 {
+			font-size: 40px;
+			font-family: 'Playfair Display';
+			color: #484a4b;
+			font-family: ;
+			text-align: center;
+			padding: 40px 0 0 0;
+		}
+
+		.subscribe p {
+			font-size: 20px;
+			color: #484a4b;
+			font-family: ;
+			text-align: center;
+			padding: 25px 0 0 0;
+		}
+
+		input[type="text"] {
+			width: 938px;
+			padding: 20px 0 20px 10px;
+			margin: 38px 0 0 253px;
+			border: 1px solid #b0b0b0;
+			background-color: #efefef;
+			outline: none;
+		}
+
+		input[type="Email"] {
+			width: 938px;
+			padding: 20px 0 20px 10px;
+			margin: 38px 0 0 253px;
+			border: 1px solid #b0b0b0;
+			background-color: #efefef;
+			outline: none;
+		}
+
+		input[type="message"] {
+			width: 938px;
+			padding: 20px 0 70px 10px;
+			margin: 38px 0 0 253px;
+			border: 1px solid #b0b0b0;
+			background-color: #efefef;
+			outline: none;
+			float: left;
+		}
+
+		.subscribe a {
+			width: 200px;
+			height: 30px;
+			background-color: #c87e6b;
+			padding: 10px 25px 10px 25px;
+			margin: 50px 0 0 615px;
+			float: left;
+			font-size: 25px;
+			font-family: 'MontserratAlternates-Bold';
+			text-align: center;
+			color: #fff;
+			font-family: Georgia;
+			border-radius: 30px;
+		}
+
+		.subscribe a:link,
+		subscribe a:visited {
+			width: 200px;
+			height: 30px;
+			background-color: #c87e6b;
+			padding: 10px 25px 10px 25px;
+			margin: 50px 0 0 615px;
+			float: left;
+			font-size: 25px;
+			font-family: 'MontserratAlternates-Bold';
+			text-align: center;
+			color: #fff;
+			font-family: Georgia;
+			border-radius: 30px;
+			text-decoration: none;
+		}
+
+		.subscribe a:hover {
+			width: 200px;
+			height: 30px;
+			background-color: #bb7361;
+			padding: 10px 25px 10px 25px;
+			margin: 50px 0 0 615px;
+			float: left;
+			font-size: 25px;
+			font-family: 'MontserratAlternates-Bold';
+			text-align: center;
+			color: #fff;
+			font-family: Georgia;
+			border-radius: 30px;
+			text-decoration: none;
+		}
+
+		.footer {
+			width: 100%;
+			height: 590px;
+			background-color: #424242;
+		}
+
+		.footer h3 {
+			color: #fff;
+			font-size: 30px;
+			font-family: 'MontserratAlternates-Bold';
+			padding: 169px 0 0 0;
+		}
+
+		.footer ul {
+			list-style-type: none;
+			color: #fff;
+			line-height: 25px;
+			padding: 41px 0 0 0;
+		}
+
+		.footer ul li {
+			list-style-type: none;
+			color: #fff;
+			line-height: 25px;
+			font-size: 20px;
+		}
+
+		.foot1 {
+			width: 250px;
+			height: 300px;
+			background-color: ;
+			float: left;
+			margin: 0 100px 0 165px;
+		}
+
+		.foot2 {
+			width: 250px;
+			height: 300px;
+			background-color: ;
+			float: left;
+			margin: 0 100px 0 100px;
+		}
+
+		.foot3 {
+			width: 250px;
+			height: 450px;
+			background-color: ;
+			float: left;
+			margin: 0 0 0 60px;
+		}
+
+		.follow {
+			width: 400px;
+			margin: 20px 0 0 900px;
+			background-color: ;
+			float: left;
+		}
+
+		.follow h4 {
+			float: left;
+			color: #fff;
+			text-align: center;
+			font-size: 25px;
+			padding: 16px 0 0 0;
+		}
+
+		.follow img {
+			padding: 0 0 0 20px;
+		}
+
+		.follow span a img {
+			padding: 0 0 0 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="index">
+			<div class="top-bar">
+				<div class="left-bar">
+					<img src="images/flower-logo.png" alt="">
+				</div>
+				<div class="center-bar">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<span>
+							<li><a href="#">Sign in</a></li>
+						</span>
+					</ul>
+				</div>
+				<div class="right-bar"></div>
+			</div>
+
+			<div class="arrangement">
+				<div class="left-part">
+					<img src="images/leaf2.png" alt="">
+					<span>
+						<h1>Flower</h1>
+					</span>
+					<h1>Arrangements</h1>
+					<h2>&middot; For all special occasion &middot;</h2>
+					<p>Orci varius natoque penatibus et ma<br>gnis dis parturient montes, Orci vari<br>us natoque
+						penatibus et magnis dis</p>
+					<ul>
+						<li><a href="#">SHOP</a>
+						<li>
+					</ul>
+					<span><a href="#">Read More</a></span>
+					<span><img src="images/leaf1.png" alt=""></span>
+				</div>
+				<div class="right-part">
+					<img src="images/girl.png" alt="">
+				</div>
+			</div>
+
+			<div class="promotion">
+				<div class="first">
+					<h1>3000+</h1>
+					<h2>Packages Sold</h2>
+				</div>
+
+				<div class="second">
+					<h1>5000+</h1>
+					<h2>Bouquet Sold</h2>
+				</div>
+
+				<div class="third">
+					<h1>7000+</h1>
+					<h2>Happy Clients</h2>
+				</div>
+
+				<div class="fourth">
+					<h1>10+</h1>
+					<h2>Years of Experience</h2>
+				</div>
+			</div>
+
+			<div class="main2">
+				<div class="top-product">
+					<img src="images/leaf3" alt="">
+					<h1>Our Top Products</h1>
+					<h2>Orci varius natoque penatibus et magnis</h2>
+					<div class="pots">
+						<div class="pot1">
+							<img src="images/pot1.png" alt="">
+							<span><img src="images/heart.png" alt=""></span>
+							<h1>Lorem impsum</h1>
+							<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius
+								natoque penatibus</p>
+							<a href="#">Read more</a>
+						</div>
+						<div class="pot2">
+							<img src="images/pot2.png" alt="">
+							<span><img src="images/heart.png" alt=""></span>
+							<h1>Lorem impsum</h1>
+							<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius
+								natoque penatibus</p>
+							<a href="#">Read more</a>
+						</div>
+						<div class="pot3">
+							<img src="images/pot3.png" alt="">
+							<span><img src="images/heart.png" alt=""></span>
+							<h1>Lorem impsum</h1>
+							<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius
+								natoque penatibus</p>
+							<a href="#">Read more</a>
+						</div>
+						<div class="pot4">
+							<img src="images/pot4.png" alt="">
+							<span><img src="images/heart.png" alt=""></span>
+							<h1>Lorem impsum</h1>
+							<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius
+								natoque penatibus</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+					<div class="buttons">
+						<img src="images/button1" alt="">
+						<img src="images/button2" alt="">
+					</div>
+				</div>
+				<div class="how-we">
+					<h1>How We do it</h1>
+					<h2>Orci varius natoque penatibus et magnis</h2>
+					<img src="images/video-image.png" alt="">
+				</div>
+
+				<div class="special-offer">
+					<div class="special1">
+						<h2>Special offer</h2>
+						<img src="images/special-leaf.png" alt="">
+						<h1>20%</h1>
+						<span><img src="images/special-leaf2.png" alt=""></span>
+						<p>Discount on your<br> first purchase</p>
+
+					</div>
+					<div class="special2">
+						<img src="images/special-image.png" alt="">
+					</div>
+				</div>
+				<div class="best-flower">
+					<img src="images/best-flower.png" alt="">
+					<div class="right-side">
+						<img src="images/best-leaf.png" alt="">
+						<h2>We select the<br> best flower</h2>
+						<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius natoque
+							penatibus</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<div class="take-care">
+					<div class="take-left-side">
+						<img src="images/best-leaf.png" alt="">
+						<h2>We take care<br>of the details</h2>
+						<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius natoque
+							penatibus</p>
+						<span><a href="#">Read more</a></span>
+					</div>
+					<span><img src="images/take-care.png" alt=""></span>
+				</div>
+
+				<div class="love">
+					<img src="images/love.png" alt="">
+					<div class="love-right-side">
+						<img src="images/best-leaf.png" alt="">
+						<h2>We love what<br>we do</h2>
+						<p>Orci varius natoque penatibus et <br>magnis dis parturient montes, Or<br>ci varius natoque
+							penatibus</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+
+				<div class="subscribe">
+					<h1>Subscribe to our<br>newsletter</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>incididunt ut
+						labore et dolore magna aliqua.</p>
+					<input type="text" placeholder="Your Name" name="Name">
+					<input type="Email" placeholder="Email" name="mail" required>
+					<input type="message" placeholder="Message" name="message">
+					<a href="#">Send Message</a>
+				</div>
+
+				<div class="footer">
+					<div class="foot1">
+						<h3>About</h3>
+						<ul>
+							<li>History</li>
+							<li>Our Team</li>
+							<li>Mission Statement</li>
+							<li>Terms & Condition</li>
+							<li>Privacy Policy</li>
+						</ul>
+					</div>
+					<div class="foot2">
+						<h3>What we do</h3>
+						<ul>
+							<li>News and stories</li>
+							<li>Publications</li>
+							<li>Take action</li>
+							<li>Recomendations</li>
+							<li>Help</li>
+						</ul>
+					</div>
+					<div class="foot3">
+						<h3>Your company</h3>
+						<ul>
+							<li>Halimun Street 25</li>
+							<li>Jakarta, City 1234</li>
+							<li>www.yourflowersite.com</li>
+						</ul>
+					</div>
+					<div class="follow">
+						<h4>Follow us!</h4>
+						<span><a href="#"><img src="images/facebook.png" </a></span>
+						<a href="#"><img src="images/insta.png" </a>
+							<a href="#"><img src="images/youtube.png" </a>
+					</div </div>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+</html>
